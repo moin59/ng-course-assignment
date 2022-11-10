@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'twoWayBinding'`, () => {
+  it(`should have as title 'user-name'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('twoWayBinding');
+    expect(app.title).toEqual('user-name');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('twoWayBinding app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('user-name app is running!');
   });
 });
